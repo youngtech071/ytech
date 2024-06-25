@@ -2618,3 +2618,21 @@ section,
 .page-title {
   margin-top: auto;
 } */
+
+/* Active dropdown item */
+/* .nav-item.dropdown .nav-link.active,
+.nav-item.dropdown .nav-link.active:hover {
+  background-color: var(
+    --nav-dropdown-active-background-color */
+/* ); 배경색 변경 */
+/* color: var(--nav-dropdown-active-color); 텍스트 색상 변경 */
+/* border-bottom: 2px solid var(--nav-dropdown-active-border-color); 선택 효과 테두리 */
+/* } */
+
+/* Hover effect on dropdown items */
+/* .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: var(
+    --nav-dropdown-hover-background-color */
+/* ); 호버 배경색 */
+/* color: var(--nav-dropdown-hover-color); 호버 텍스트 색상 */
+/* } */
