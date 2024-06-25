@@ -1,10 +1,4 @@
-/**
-* Template Name: Active
-* Template URL: https://bootstrapmade.com/active-bootstrap-website-template/
-* Updated: Jun 19 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 (function() {
   "use strict";

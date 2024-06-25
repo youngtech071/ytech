@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +28,18 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- google map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <style>
+    /* 지도를 표시할 div의 스타일 */
+    #map {
+      height: 400px;
+      /* 지도의 높이 설정 */
+      width: 100%;
+      /* 지도의 너비 설정 */
+    }
+  </style>
 
 
 </head>
@@ -46,7 +60,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html">Poto</a></li>
           <!-- <li><a href="team.html">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -104,8 +118,10 @@
                 <div class="col-lg-4">
                   <div class="service no-shadow link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
                     <div class="service-icon color-1 mb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z">
+                        </path>
                       </svg>
                     </div>
                     <!-- /.icon -->
@@ -120,13 +136,16 @@
                 <div class="col-lg-4">
                   <div class="service no-shadow link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
                     <div class="service-icon color-1 mb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"></path>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z">
+                        </path>
                       </svg>
                     </div>
                     <!-- /.icon -->
                     <div class="service-contents">
-                      <p>info@yourdomain.com</p>
+                      <p>youngtecg@youngtech.org</p>
                     </div>
                     <!-- /.service-contents-->
                   </div>
@@ -136,8 +155,11 @@
                 <div class="col-lg-4">
                   <div class="service no-shadow link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
                     <div class="service-icon color-1 mb-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                        </path>
                       </svg>
                     </div>
                     <!-- /.icon -->
@@ -152,13 +174,42 @@
 
             </div>
 
-            <form action="forms/contact.php" method="post" role="form" class="row justify-content-center mt-0 gy-4 php-email-form" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- 회사 위치 지도-->
+
+            <div id="map"></div>
+
+            <script>
+              // 초기화 함수
+              function initMap() {
+                // 초기 지도의 중심 위치와 줌 레벨 설정
+                var myLatLng = { lat: 51.505, lng: -0.09 };
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  center: myLatLng,
+                  zoom: 13
+                });
+
+                // 마커 추가
+                var marker = new google.maps.Marker({
+                  position: myLatLng,
+                  map: map,
+                  title: 'Hello World!'
+                });
+              }
+            </script>
+            <!-- 초기화 함수 호출 -->
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+            </script>
+
+
+            <form action="forms/contact.php" method="post" role="form"
+              class="row justify-content-center mt-0 gy-4 php-email-form" data-aos="fade-up" data-aos-delay="100">
               <div class="col-lg-8">
                 <div class="row g-4 mb-4">
                   <div class="col-lg-6">
                     <div class="form-group">
                       <label for="fname">Name</label>
-                      <input type="text" class="form-control" id="fname">
+                      <input type="text" class="form-control" id="fname" required>
                     </div>
                   </div>
                   <div class="col-lg-6">
@@ -172,7 +223,7 @@
                   <div class="col-12">
                     <div class="form-group">
                       <label for="email">Email address</label>
-                      <input type="email" class="form-control" id="email">
+                      <input type="email" class="form-control" id="email" required>
                     </div>
                   </div>
 
@@ -185,7 +236,7 @@
                   <div class="my-3">
                     <div class="loading">Loading</div>
                     <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    <div class="sent-message">전송 완료. 감사합니다!</div>
                   </div>
                   <div class="mt-0">
                     <button type="submit" class="btn-submit">Send Message</button>
@@ -294,7 +345,7 @@
           <div class="widget">
             <h3 class="widget-heading"></h3>
             <p class="mb-4">
-              
+
             </p>
             <!-- <p class="mb-0">
               <a href="#" class="btn-learn-more">Learn more</a>
@@ -336,7 +387,8 @@
             <h3 class="widget-heading">YongtechCo.,Ltd</h3>
             <ul class="list-unstyled footer-blog-entry">
               <li>
-                <span class="d-block date">42-5, Jungbu-daero 819, Giheung-gu, Yongin-si, Gyeonggi-do, Republic of Korea</span>
+                <span class="d-block date">42-5, Jungbu-daero 819, Giheung-gu, Yongin-si, Gyeonggi-do, Republic of
+                  Korea</span>
               </li>
               <li>
                 <span class="d-block date">Tel. 031-281-8694</span>
@@ -366,22 +418,23 @@
           </div> -->
         </div>
       </div>
-<!-- 
+      <!-- 
       <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Active.</strong> <span>All Rights Reserved</span></p>
         <div class="credits"> -->
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you've purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+      <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div> -->
     </div>
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
