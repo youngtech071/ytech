@@ -1,55 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Poto</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Poto</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/img_YT_logo-removebg-preview.png" rel="icon" />
+    <link
+      href="assets/img/img_YT_logo-removebg-preview.png"
+      rel="apple-touch-icon"
+    />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <body class="portfolio-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/img_YT_logo-removebg-preview.png" alt="" />
+          <h1 class="sitename">Youngtech.</h1>
+        </a>
 
-
-</head>
-
-<body class="portfolio-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Youngtech.</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html" class="active">Poto</a></li>
-          <!-- <li><a href="team.html">Team</a></li> -->
-          <!-- <li><a href="blog.html">Blog</a></li>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About
+                <!-- <i class="bi bi-chevron-down toggle-dropdown"></i> -->
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="about_in.html">인사말</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about_ph.html">경영 철학</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about_his.html">회사 연혁</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about_vis.html">회사 비전</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about_cli.html">회사 거래처</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html" class="active">Poto</a></li>
+            <!-- <li><a href="team.html">Team</a></li> -->
+            <!-- <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -67,149 +107,228 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li> -->
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
 
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title light-background">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-lg-12">
-            <h1 class="page-title-heading">Portfolio</h1>
-            <nav aria-label="breadcrumb">
-              <ol class="custom-breadcrumb breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active current" aria-current="page">Portfolio</li>
-              </ol>
-            </nav>
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title light-background">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-12">
+              <h1 class="page-title-heading">Portfolio</h1>
+              <nav aria-label="breadcrumb">
+                <ol class="custom-breadcrumb breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li
+                    class="breadcrumb-item active current"
+                    aria-current="page"
+                  >
+                    Portfolio
+                  </li>
+                </ol>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
-    </div><!-- End Page Title -->
+      <!-- End Page Title -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <!-- <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
             <li data-filter=".filter-product">Card</li>
             <li data-filter=".filter-branding">Web</li>
           </ul>End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/img_YT_com.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <!-- <h4>회사 건물</h4> -->
-                <!-- <p>Lorem ipsum, dolor sit</p> -->
-                <a href="assets/img/img_YT_com.png"  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img src="assets/img/img_YT_com.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <!-- <h4>회사 건물</h4> -->
+                  <!-- <p>Lorem ipsum, dolor sit</p> -->
+                  <a
+                    href="assets/img/img_YT_com.png"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/img_YT_te1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <!-- <h4>Product 1</h4>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <img src="assets/img/img_YT_te1.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <!-- <h4>Product 1</h4>
                 <p>Lorem ipsum, dolor sit</p> -->
-                <a href="assets/img/img_YT_te1.png"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                  <a
+                    href="assets/img/img_YT_te1.png"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/img_YT_te2.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <!-- <h4>Branding 1</h4>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <img src="assets/img/img_YT_te2.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <!-- <h4>Branding 1</h4>
                 <p>Lorem ipsum, dolor sit</p> -->
-                <a href="assets/img/img_YT_te2.png"  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                  <a
+                    href="assets/img/img_YT_te2.png"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/img_YT_te3.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <!-- <h4>App 2</h4>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img src="assets/img/img_YT_te3.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <!-- <h4>App 2</h4>
                 <p>Lorem ipsum, dolor sit</p> -->
-                <a href="assets/img/img_YT_te3.png"  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                  <a
+                    href="assets/img/img_YT_te3.png"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/img_YT_te4.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <!-- <h4>Product 2</h4>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <img src="assets/img/img_YT_te4.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <!-- <h4>Product 2</h4>
                 <p>Lorem ipsum, dolor sit</p> -->
-                <a href="assets/img/img_YT_te4.png"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                  <a
+                    href="assets/img/img_YT_te4.png"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/img_YT_te5.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <!-- <h4>Branding 2</h4>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <img src="assets/img/img_YT_te5.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <!-- <h4>Branding 2</h4>
                 <p>Lorem ipsum, dolor sit</p> -->
-                <a href="assets/img/img_YT_te5.png"  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                  <a
+                    href="assets/img/img_YT_te5.png"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/img_YT_te6.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <!-- <h4>App 3</h4>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+              >
+                <img src="assets/img/img_YT_te6.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <!-- <h4>App 3</h4>
                 <p>Lorem ipsum, dolor sit</p> -->
-                <a href="assets/img/img_YT_te6.png"  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                  <a
+                    href="assets/img/img_YT_te6.png"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/img_YT_te7.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <!-- <h4>Product 3</h4>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+              >
+                <img src="assets/img/img_YT_te7.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <!-- <h4>Product 3</h4>
                 <p>Lorem ipsum, dolor sit</p> -->
-                <a href="assets/img/img_YT_te7.png"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                  <a
+                    href="assets/img/img_YT_te7.png"
+                    data-gallery="portfolio-gallery-product"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/img_YT_te8.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <!-- <h4>Branding 3</h4>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+              >
+                <img src="assets/img/img_YT_te8.png" class="img-fluid" alt="" />
+                <div class="portfolio-info">
+                  <!-- <h4>Branding 3</h4>
                 <p>Lorem ipsum, dolor sit</p> -->
-                <a href="assets/img/img_YT_te8.png"  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                  <a
+                    href="assets/img/img_YT_te8.png"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
               </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
+              <!-- End Portfolio Item -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
         </div>
+      </section>
+      <!-- /Portfolio Section -->
 
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Testimonials Section -->
-    <!-- <section id="testimonials" class="testimonials section">
+      <!-- Testimonials Section -->
+      <!-- <section id="testimonials" class="testimonials section">
 
       <div class="container" data-aos="fade-up">
         <div class="row justify-content-center">
@@ -293,10 +412,9 @@
         </div>
       </div>
     </section>/Testimonials Section -->
+    </main>
 
-  </main>
-
-  <!-- <footer id="footer" class="footer light-background">
+    <!-- <footer id="footer" class="footer light-background">
     <div class="container">
       <div class="row g-4">
         <div class="col-md-6 col-lg-3 mb-3 mb-md-0">
@@ -387,34 +505,37 @@
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Active.</strong> <span>All Rights Reserved</span></p>
         <div class="credits">
            All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    <!-- You can delete the links only if you've purchased the pro version. -->
+    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+    <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+    <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
     </div>
-  </footer> --> 
+  </footer> -->
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
