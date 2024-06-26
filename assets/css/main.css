@@ -2636,3 +2636,29 @@ section,
 /* ); 호버 배경색 */
 /* color: var(--nav-dropdown-hover-color); 호버 텍스트 색상 */
 /* } */
+/*컬럼 센터 정렬*/
+.centered-column {
+        margin-left: auto;
+        margin-right: auto;
+    }
+/*컬럼 센터 정렬*/
+
+/* services wet css */
+.box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px; /* 테두리 곡선 추가 */
+  max-width: 400px; /* 최대 너비 설정 */
+  min-height: 90px; /* 최대 높이 설정 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  align-items: center; /* 수직(상하) 가운데 정렬 */
+}
+.box:hover {
+  background-color: #e0e0e0;
+          cursor: pointer;
+}
+.box-container {
+  padding-right: 15px; /* 오른쪽 여백 추가 */
+  padding-left: 100px; /* 왼쪽 여백 추가 */
+}
