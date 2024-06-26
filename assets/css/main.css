@@ -2645,20 +2645,37 @@ section,
 
 /* services wet css */
 .box {
+  /* 박스의 기본 스타일 */
+  font-size: 18px;
   background-color: #f0f0f0;
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 10px; /* 테두리 곡선 추가 */
-  max-width: 400px; /* 최대 너비 설정 */
-  min-height: 90px; /* 최대 높이 설정 */
+  border-radius: 10px;
+  max-width: 400px;
+  min-height: 90px;
+  display: flex; /* Flexbox를 사용하여 내부 요소를 정렬 */
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center; /* 가운데 정렬 */
   text-align: center; /* 텍스트 가운데 정렬 */
-  align-items: center; /* 수직(상하) 가운데 정렬 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능하게 함 */
 }
 .box:hover {
   background-color: #e0e0e0;
-          cursor: pointer;
+  cursor: pointer;
 }
 .box-container {
   padding-right: 15px; /* 오른쪽 여백 추가 */
   padding-left: 100px; /* 왼쪽 여백 추가 */
+}
+.box-wet{
+font-size: 18px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+  min-height: 50px;
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center; /* 가운데 정렬 */
+  text-align: center; /* 텍스트 가운데 정렬 */
 }
