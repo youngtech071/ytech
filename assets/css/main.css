@@ -2660,15 +2660,21 @@ section,
   align-items: center; /* 가운데 정렬 */
   text-align: center; /* 텍스트 가운데 정렬 */
   cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능하게 함 */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); /* 기본 박스 쉐도우 */
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1); /* 트랜지션 효과 */
 }
+
 .box:hover {
-  background-color: #e0e0e0;
-  cursor: pointer;
+  background-color: #e0e0e0; /* 배경색 변경 */
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); /* 호버 시 박스 쉐도우 변화 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경하여 클릭 가능하게 함 */
 }
+
 .box-container {
   padding-right: 15px; /* 오른쪽 여백 추가 */
   padding-left: 130px; /* 왼쪽 여백 추가 */
 }
+
 .box-wet{
 font-size: 18px;
   background-color: #f0f0f0;
