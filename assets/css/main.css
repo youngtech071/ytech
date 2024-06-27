@@ -391,6 +391,9 @@ h6 {
   font-size: 14px;
   border-top: 1px solid
     color-mix(in srgb, var(--default-color), transparent 80%);
+
+  bottom: 0;
+  width: 100%;
 }
 
 .footer a {
