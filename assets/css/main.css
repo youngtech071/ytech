@@ -2674,8 +2674,29 @@ section,
 }
 
 .box-container {
-  padding-right: 15px; /* 오른쪽 여백 추가 */
-  padding-left: 130px; /* 왼쪽 여백 추가 */
+  padding-right: 15%; /* 오른쪽 여백 추가 */
+  padding-left: 15%; /* 왼쪽 여백 추가 */
+}
+
+@media (max-width: 1200px) {
+    .box-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+     .box-container {
+        margin-left: 5%;
+        margin-right: 5%;
+     }
+}
+
+@media (max-width: 576px) {
+    .box-container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }
 
 .box-wet{
