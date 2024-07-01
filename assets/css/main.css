@@ -2746,3 +2746,6 @@ font-size: 18px;
     max-width: 70%;
     border-radius: 10px;
 }
+.container-about{
+background-color: var(--background-color);
+}
